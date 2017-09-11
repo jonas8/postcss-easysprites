@@ -399,7 +399,7 @@ function updateReferences(images, opts, sprites, css) {
 
           rule.insertAfter(backgroundImage, backgroundPosition);
 
-          if (1 || image.ratio > 1) {
+          if (image.ratio > 1) {
             backgroundSize = postcss.decl({
               prop: 'background-size',
               value: getBackgroundSize(image),
